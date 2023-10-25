@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Cricketer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="style.css"></script>
+</head>
+<body>
+    <header class="grid grid-cols-3 gap-4 bg-black">
+        <img src="image/cwc2023.jpeg" alt="" class="w-4/5 mt-6 mx-auto">
+     <div class="mt-6">
+        <h1 class="font-bold text-5xl text-white">Best cricketer <span class="text-red-700">CWC 2023!!!!</span></h1>
+        <p class="text-white mt-4 w-4/5 text-center mx-auto">The Cricket World Cup, officially known as ICC Men's Cricket World Cup, is the international championship of One Day International (ODI) cricket.
+         The event is organised by the sport's governing body, the International Cricket Council (ICC), every four years, with preliminary qualification rounds
+          leading up to a finals tournament. The tournament is one of the world's most viewed sporting events and is considered the "flagship event of the international cricket
+           calendar" by the ICC. It is the pinnacle championship of the sport of cricket.</p>
+     </div>
+      <img src="image/world cup.png" alt="" class="mx-auto mt-2">
+    </header>
+
+    <main class="grid grid-cols-4 gap-4 mt-10 w-3/4 mx-auto mb-10">
+
+
+       <div class="border-solid border border-black">
+        <img src="image/sakib.png" alt="" class="">
+        <h3 class="font-semibold mt-3 text-3xl text-center" id="player-1">Shakib-Al-Hasan</h3>
+        <h3 class=" mt-3 text-xl text-center">Allrounder</h3>
+        <button class="bg-slate-200 w-3/4 py-2 my-3 mx-8 hover:bg-blue-400 rounded" id="btn-shakib">Select</button>
+       </div>
+
+
+       <div class="border-solid border border-black">
+        <img src="image/tamim.png" alt="" class="">
+        <h3 class="font-semibold mt-3 text-3xl text-center" id="player-2">Tamim Iqbal</h3>
+        <h3 class="mt-3 text-xl text-center">Batsman</h3>
+        <button class="bg-slate-200 w-3/4 py-2 my-3 mx-8 hover:bg-blue-400 rounded" id="btn-tamim">Select</button>
+       </div>
+
+
+       <div class="border-solid border border-black">
+        <img src="image/kholi.png" alt="" class="">
+        <h3 class="font-semibold mt-3 text-3xl text-center" id="player-3">Virat Kohli</h3>
+        <h3 class="mt-3 text-xl text-center">Batsman</h3>
+        <button class="bg-slate-200 w-3/4 py-2 my-3 mx-8 hover:bg-blue-400 rounded" id="btn-kholi">Select</button>
+       </div>
+
+
+       <div class="border-solid border border-black">
+       <h2 class="text-center font-semibold text-4xl mt-4 text-rose-800">Selected Five</h2>
+       <ul class="mt-6 px-6 font-semibold text-3xl" id="position">
+       </ul>
+       </div>
+
+
+       <div class="border-solid border border-black">
+        <img src="image/babar-azam.png" alt="" class="">
+        <h3 class="font-semibold mt-3 text-3xl text-center" id="player-4">Babar Azam</h3>
+        <h3 class="mt-3 text-xl text-center">Batsman</h3>
+        <button class="bg-slate-200 w-3/4 py-2 my-3 mx-8 hover:bg-blue-400 rounded" id="btn-babar">Select</button>
+       </div>
+
+
+       <div class="border-solid border border-black">
+        <img src="image/williamson.png" alt="" class="">
+        <h3 class="font-semibold mt-3 text-3xl text-center" id="player-5">Kane Williamson</h3>
+        <h3 class="mt-3 text-xl text-center">Batsman</h3>
+        <button class="bg-slate-200 w-3/4 py-2 my-3 mx-8 hover:bg-blue-400 rounded" id="btn-kane">Select</button>
+       </div>
+
+
+       <div class="border-solid border border-black">
+        <img src="image/kock.png" alt="" class="">
+        <h3 class="font-semibold mt-3 text-3xl text-center" id="player-6">Quinton de Kock</h3>
+        <h3 class="mt-3 text-xl text-center">Batsman & Wicketkeeper</h3>
+        <button class="bg-slate-200 w-3/4 py-2 my-3 mx-8 hover:bg-blue-400 rounded" id="btn-kock">Select</button>
+       </div>
+
+
+       <div class="border-solid border border-black">
+        <h2 class="text-center text-4xl font-semibold mt-4">Budget</h2>
+        <p class="display: inline-block mx-4 text-xl mt-4">Per player :</p>
+        <input type="text" class="border border-solid border-black px-2 p-1" id="per-player-budget">
+        <button class="bg-blue-800  py-2 my-5 w-5/6 mx-6 text-white font-semibold rounded" id="btn-calculate">Calculate</button>
+        <p class="display: inline-block mx-4 text-xl mt-4">Player Expenses :  $<span class="font-semibold" id="total-player-budget">00</span></p>
+        <p class="display: inline-block mx-4 text-xl mt-4">Manager  :</p>
+        <input type="text" class="border border-solid border-black px-2 p-1" id="manager-budget">
+        <p class="display: inline-block mx-4 text-xl mt-4">Coach    :</p>
+        <input type="text" class="border border-solid border-black px-2 p-1" id="coach-budget">
+        <button class="bg-blue-800  py-2 my-5 w-5/6 mx-6 text-white font-semibold rounded" id="btn-total-calculate">Calculate Total</button>
+        <p class="display: inline-block mx-4 text-xl mt-4 mb-2">Total Expenses :  $<span class="font-semibold" id="total-expense-field">00</span></p>
+       </div>
+
+
+       <div class="border-solid border border-black">
+        <img src="image/david warner.png" alt="" class="">
+        <h3 class="font-semibold mt-3 text-3xl text-center" id="player-7">David Warner</h3>
+        <h3 class="mt-3 text-xl text-center">Batsman</h3>
+        <button class="bg-slate-200 w-3/4 py-2 my-3 mx-8 hover:bg-blue-400 rounded" id="btn-warner">Select</button>
+       </div>
+
+
+       <div class="border-solid border border-black">
+        <img src="image/steve.png" alt="" class="">
+        <h3 class="font-semibold mt-3 text-3xl text-center" id="player-8">Steven Smith</h3>
+        <h3 class="mt-3 text-xl text-center">Batsman</h3>
+        <button class="bg-slate-200 w-3/4 py-2 my-3 mx-8 hover:bg-blue-400 rounded" id="btn-steve">Select</button>
+       </div>
+
+
+       <div class="border-solid border border-black">
+        <img src="image/ben stokes.png" alt="" class="">
+        <h3 class="font-semibold mt-3 text-3xl text-center" id="player-9">Ben Stokes</h3>
+        <h3 class="mt-3 text-xl text-center">Allrounder</h3>
+        <button class="bg-slate-200 w-3/4 py-2 my-3 mx-8 hover:bg-blue-400 rounded" id="btn-stokes">Select</button>
+       </div>
+    </main>
+    <script src="js/top-player.js"></script>
+    <script src="js/claculation.js"></script>
+</body>
+</html>
